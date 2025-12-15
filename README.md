@@ -4,7 +4,14 @@
  
  <img src="preview.png"/>
  
----
+## Features
+
+ El proyecto integra control directo de los motores paso a paso mediante una GUI simple ademas de una serie de funciones presentadas como botones extra para ejecutar patrones de movimiento especificos. 
+ 
+ <img src="GUI_preview.png">
+ 
+ El robot tambien posee elementos terminales intercambeables destinados a demostrar la utilidad de los patrones de movimiento integrados en la GUI. 
+ Funciones como Control de Velocidad por sensores y mecanismo complejos de transmision aun estan en contemplacion. 
 
 ## Project Structure
 
@@ -17,34 +24,28 @@
  * **Schematics** - Documentacion referente a las conexiones y montaje general del hardware implementado
  
  * **CAD Models** - Referencia de modelos 3D usados para el robot.
- 
----
 
-## Features
-
- El proyecto integra control directo de los motores paso a paso mediante una GUI simple ademas de una serie de funciones presentadas como botones extra para ejecutar patrones de movimiento especificos. 
- El robot tambien posee elementos terminales intercambeables destinados a demostrar la utilidad de los patrones de movimiento integrados en la GUI. 
- Funciones como Control de Velocidad por sensores y mecanismo complejos de transmision aun estan en contemplacion. 
- 
----
 
 ## Prerequisites 
 
  * **Hardware**: 
-   1. Placa Espressif ESP32
-   2. Motores Paso a Paso
-   3. Cable Mini-USB
+   - Placa Espressif ESP32
+   - Motores Paso a Paso
+   - Cable Mini-USB
    
  * **Software**:
-   1. Arduino IDE
-   1. Python 3.x
+   - Arduino IDE
+   - Python 3.x
    
  * **Pip Packages**:
-   1. Pillow 
-   2. PySerial
+   - Pillow 
+   - PySerial
 	
----
 
 ## Installation/Setup
 
-[Bajo desarrollo]
+	[Bajo desarrollo]
+	
+## Additional Notes:
+
+ Se tendran diversos archivos README para cada seccion mayor del repositorio. El proyecto podra tener multiples ramas dedicadas a versiones nativas y a versiones de desarrollo y master. Actualmente este repositorio solo tiene la rama de master.
