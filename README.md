@@ -36,6 +36,8 @@
  * **Software**:
    - Arduino IDE
    - Python 3.x
+   - ESP32 Arduino Core
+   - Accelstepper Library
    
  * **Pip Packages**:
    - Pillow 

@@ -8,7 +8,7 @@ from PIL import ImageTk, Image
 
 # Define Path for GUI images
 
-SRC = Path('D:/DATA/Desktop/RoboArm/Software/GUI/src/GUI.py').resolve().parent #Esto sera un problema con el tema de la redistribucion 
+SRC = Path('D:/DATA/Desktop/RoboArm/Software/main/src/main.py').resolve().parent #Esto sera un problema con el tema de la redistribucion 
 GUI = SRC.parent
 IMG_DIR = GUI /"img"
 
@@ -49,6 +49,5 @@ btn4.grid(column=3, row=2, padx=2, pady=2)
 btn4['image']=right_arrow
 
 #we would need to include some image difference explaining the movement produced by each button
-
 
 root.geometry("600x400")
