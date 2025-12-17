@@ -35,7 +35,7 @@
    
  * **Software**:
    - Arduino IDE
-   - Python 3.x
+   - Python 3.13>=
    - ESP32 Arduino Core
    - Accelstepper Library
    

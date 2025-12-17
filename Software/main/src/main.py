@@ -51,3 +51,4 @@ btn4['image']=right_arrow
 #we would need to include some image difference explaining the movement produced by each button
 
 root.geometry("600x400")
+root.mainloop()

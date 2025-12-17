@@ -29,7 +29,7 @@ Se han barajeado algunas opciones sobre la libreria para el control de motores p
 
 Deberias encontrar documentacion de las librierias usadas aqui:
 
-[AccelStepper](https://www.airspayce.com/mikem/arduino/AccelStepper/)
+ * [AccelStepper](https://www.airspayce.com/mikem/arduino/AccelStepper/)
 
-[Serial (UART)](https://github.com/espressif/arduino-esp32/blob/2b15254d0b28329dc7af3fd8f9757e125e682660/docs/en/api/serial.rst)
+ * [Serial (UART)](https://github.com/espressif/arduino-esp32/blob/2b15254d0b28329dc7af3fd8f9757e125e682660/docs/en/api/serial.rst)
 
