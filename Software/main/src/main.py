@@ -6,9 +6,26 @@ from pathlib import Path
 
 from PIL import ImageTk, Image
 
+
 # Define Button Commands
 
+def MOVE_UP_1:
+    ser.write(b'q')
 
+def MOVE_DOWN_1:
+    ser.write(b'w')
+
+def MOVE_UP_2:
+    ser.write(b'e')
+
+def MOVE_DOWN_2:
+    ser.write(b'r')
+
+def ROTATE_RIGHT:
+    ser.write(b's')
+
+def ROTATE_LEFT:
+    ser.write(b't')
 
 # Define Path for GUI images
 
@@ -25,6 +42,8 @@ RIGHT_ARROW = IMG_DIR /"right-arrow.png"
 # GUI Composition (using pillow)
 root = Tk()
 root.title("Robot Arm")
+
+#Aqui tenemos que cambiar el layout de los botones y agregar uno nuevo. No concuerda con la figura del robot. Han de ser 2 pares que muestren arriba y abajo y un par que muestre izquiera derecha.
 
 up_arrow = ImageTk.PhotoImage(Image.open(UP_ARROW))
 btn = tk.Button(root)

@@ -110,7 +110,7 @@ constexpr char MOVE_JOINT3_LEFT = 't'
 
 //Los Steppers seran llamados como articulaciones (joints) y seran enumerados como lo dice el esquematico en Hardware/  
 
-  AccelStepper joint1;
+  AccelStepper joint1();
   AccelStepper joint2(); //Se deben especificar los pines de acuerdo a las conexiones del modulo para las siguientes dos articulaciones
   AccelStepper joint3();
 
