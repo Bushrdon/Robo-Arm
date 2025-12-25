@@ -9,23 +9,23 @@ from PIL import ImageTk, Image
 
 # Define Button Commands
 
-def MOVE_UP_1:
-    ser.write(b'q')
+#def MOVE_UP_1:
+#    ser.write(b'q')
 
-def MOVE_DOWN_1:
-    ser.write(b'w')
+#def MOVE_DOWN_1:
+#    ser.write(b'w')
 
-def MOVE_UP_2:
-    ser.write(b'e')
+#def MOVE_UP_2:
+#    ser.write(b'e')
 
-def MOVE_DOWN_2:
-    ser.write(b'r')
+#def MOVE_DOWN_2:
+#    ser.write(b'r')
 
-def ROTATE_RIGHT:
-    ser.write(b's')
+#def ROTATE_RIGHT:
+#    ser.write(b's')
 
-def ROTATE_LEFT:
-    ser.write(b't')
+#def ROTATE_LEFT:
+#    ser.write(b't')
 
 # Define Path for GUI images
 
@@ -36,39 +36,54 @@ IMG_DIR = GUI /"img"
 UP_ARROW = IMG_DIR /"up-arrow.png"
 LEFT_ARROW = IMG_DIR /"left-arrow.png"
 DOWN_ARROW = IMG_DIR /"down-arrow.png"
-ARROW = IMG_DIR /"arrow.png"
 RIGHT_ARROW = IMG_DIR /"right-arrow.png"
 
 # GUI Composition (using pillow)
+
 root = Tk()
 root.title("Robot Arm")
 
-#Aqui tenemos que cambiar el layout de los botones y agregar uno nuevo. No concuerda con la figura del robot. Han de ser 2 pares que muestren arriba y abajo y un par que muestre izquiera derecha.
-
-up_arrow = ImageTk.PhotoImage(Image.open(UP_ARROW))
+up_arrow_1 = ImageTk.PhotoImage(Image.open(UP_ARROW))
 btn = tk.Button(root)
 btn.grid(column=2, row=1, padx=2, pady=2)
-btn['image']=up_arrow
+btn['image']=up_arrow_1
 
-left_arrow = ImageTk.PhotoImage(Image.open(LEFT_ARROW))
-btn1= tk.Button(root)
-btn1.grid(column=1, row=2, padx=2, pady=2)
-btn1['image']=left_arrow
-
-down_arrow = ImageTk.PhotoImage(Image.open(DOWN_ARROW))
+down_arrow_1 = ImageTk.PhotoImage(Image.open(DOWN_ARROW))
 btn2= tk.Button(root)
 btn2.grid(column=2, row=3, padx=2, pady=2)
-btn2['image']=down_arrow
+btn2['image']=down_arrow_1
 
-arrow = ImageTk.PhotoImage(Image.open(ARROW))
-btn3= tk.Button(root)
-btn3.grid(column=2, row=2, padx=2, pady=2)
-btn3['image']=arrow
+#joint1 = ImageTk.PhotoImage(Image.open(ARROW))
+label1= tk.Label(root, text = "joint_1")
+label1.grid(column=2, row=2, padx=2, pady=2)
+#label1['image'] = arrow
+
+up_arrow_2 = ImageTk.PhotoImage(Image.open(UP_ARROW))
+btn3 = tk.Button(root)
+btn3.grid(column=4, row=1, padx=2, pady=2)
+btn3['image']=up_arrow_2
+
+down_arrow_2 = ImageTk.PhotoImage(Image.open(DOWN_ARROW))
+btn4= tk.Button(root)
+btn4.grid(column=4, row=3, padx=2, pady=2)
+btn4['image']=down_arrow_2
+
+label2 = tk.Label(root, text = "joint_2")
+label2.grid(column=4, row=2, padx=2, pady=2)
 
 right_arrow = ImageTk.PhotoImage(Image.open(RIGHT_ARROW))
-btn4= tk.Button(root)
-btn4.grid(column=3, row=2, padx=2, pady=2)
-btn4['image']=right_arrow
+btn5= tk.Button(root)
+btn5.grid(column=7, row=2, padx=2, pady=2)
+btn5['image']=right_arrow
+
+left_arrow = ImageTk.PhotoImage(Image.open(LEFT_ARROW))
+btn6= tk.Button(root)
+btn6.grid(column=5, row=2, padx=2, pady=2)
+btn6['image']=left_arrow
+
+label3= tk.Label(root, text = "joint_3")
+label3.grid(column=6, row=2, padx=2, pady=2)
+
 
 #we would need to include some image difference explaining the movement produced by each button
 
