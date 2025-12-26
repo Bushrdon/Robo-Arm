@@ -37,6 +37,9 @@ UP_ARROW = IMG_DIR /"up-arrow.png"
 LEFT_ARROW = IMG_DIR /"left-arrow.png"
 DOWN_ARROW = IMG_DIR /"down-arrow.png"
 RIGHT_ARROW = IMG_DIR /"right-arrow.png"
+JOINT_1 = IMG_DIR /"joint_1.png"
+JOINT_2 = IMG_DIR /"joint_2.png"
+JOINT_3 = IMG_DIR /"joint_3.png"
 
 # GUI Composition (using pillow)
 
@@ -53,10 +56,10 @@ btn2= tk.Button(root)
 btn2.grid(column=2, row=3, padx=2, pady=2)
 btn2['image']=down_arrow_1
 
-#joint1 = ImageTk.PhotoImage(Image.open(ARROW))
-label1= tk.Label(root, text = "joint_1")
+joint1 = ImageTk.PhotoImage(Image.open(JOINT_1))
+label1= tk.Label(root)
 label1.grid(column=2, row=2, padx=2, pady=2)
-#label1['image'] = arrow
+label1['image'] = joint1
 
 up_arrow_2 = ImageTk.PhotoImage(Image.open(UP_ARROW))
 btn3 = tk.Button(root)
@@ -68,8 +71,10 @@ btn4= tk.Button(root)
 btn4.grid(column=4, row=3, padx=2, pady=2)
 btn4['image']=down_arrow_2
 
+joint2 = ImageTk.PhotoImage(Image.open(JOINT_2))
 label2 = tk.Label(root, text = "joint_2")
 label2.grid(column=4, row=2, padx=2, pady=2)
+label2['image'] = joint2
 
 right_arrow = ImageTk.PhotoImage(Image.open(RIGHT_ARROW))
 btn5= tk.Button(root)
@@ -81,11 +86,10 @@ btn6= tk.Button(root)
 btn6.grid(column=5, row=2, padx=2, pady=2)
 btn6['image']=left_arrow
 
+joint3 = ImageTk.PhotoImage(Image.open(JOINT_3))
 label3= tk.Label(root, text = "joint_3")
 label3.grid(column=6, row=2, padx=2, pady=2)
-
-
-#we would need to include some image difference explaining the movement produced by each button
+label3['image'] = joint3
 
 root.geometry("600x400")
 root.mainloop()
