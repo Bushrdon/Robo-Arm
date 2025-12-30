@@ -6,6 +6,10 @@ Debes tener a la mano los siguientes **componentes**:
 2. **DRV8825 (x3)**
 3. **Bipolar Stepper (x3)**
 
+# Scheme
+
+<img src='img/scheme.png'>
+
 # Parts Specs
 
 Especificaciones y comentarios referentes a los componentes del proyecto.
@@ -30,6 +34,8 @@ Hasta donde se tiene contemplado las conexiones de este componente solo involucr
 
 Para la implementacion de estos componentes se hara uso del diagrama ilustrativo de una aplicacion simple que se le tiene al driver ofrecida por el fabricante en la hoja de datos. 
 
+En general las conexiones serian siempre como sigue:
+
 	A1 -------> Coil_1
 	
 	A2 -------> Coil_1
@@ -44,7 +50,7 @@ Para la implementacion de estos componentes se hara uso del diagrama ilustrativo
 	
 	Step -----> GPIO
 	
-	XXXX -----> GPIO 
+	Direction -----> GPIO 
 	
 Conforme las necesidades del proyecto cambien y o se presenten problemas se contemplara hacer uso de los pines restantes para permitir sus funcionalidades. Por los momentos, un wiring como el de arriba deberia ser suficiente para una aplicacion simple de Steppers. 
 
