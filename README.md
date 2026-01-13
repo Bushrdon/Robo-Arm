@@ -6,32 +6,38 @@ La barrera entre lo que esta terminado y lo que potencialmente puede enferentars
 
 **Ya hecho:**
 
-1.Firmware: 
-a. Framework definido: Arduino
-b. Libreria definida: AccelStepper
-2.Software:
-a. Lenguaje definido: Python
-b. GUI en: Tkinter
-c. Libreria para Serial UART: PySerial
-3.Hardware:
-a. Unidad de Controlador: ESP32
+Firmware: 
+
+1. Framework definido: Arduino
+2. Libreria definida: AccelStepper
+
+Software:
+
+1. Lenguaje definido: Python
+2. GUI en: Tkinter
+3. Libreria para Serial UART: PySerial
+
+Hardware:
+
+1. Unidad de Controlador: ESP32
 
 **Por hacer:**
 
 Hardware:
-a. Terminar de decidir por modelo y tipo de motor paso a paso
+
+1. Terminar de decidir por modelo y tipo de motor paso a paso
 
 	Sugiero el modelo de un bipolar NEMA17 si se pretende hacer la estructura con impresion 3d
 
-b. Decidirse por los drivers relativos al tipo de motor que se usara 
+2. Decidirse por los drivers relativos al tipo de motor que se usara 
 
 	Sugiero el DRV8825, en general sugiero todo lo propuesto en 'Hardware/README.md'
 	
 Estructura:
 
-a. Definir si se hara usando impresion 3D o materiales mas improvisados y ligeros
-b. Definir si la estructura implementara sistemas de transmision para hacer llegar movimiento a cada articulacion o sera mas simple y solo implementara lo descrito en 'Robo-Arm/Hardware'
-c. Definir si se considera agregarle un elemento terminal o solo nos limitaremos a hacer un brazo articulado
+1. Definir si se hara usando impresion 3D o materiales mas improvisados y ligeros
+2. Definir si la estructura implementara sistemas de transmision para hacer llegar movimiento a cada articulacion o sera mas simple y solo implementara lo descrito en 'Robo-Arm/Hardware'
+3. Definir si se considera agregarle un elemento terminal o solo nos limitaremos a hacer un brazo articulado
 
 # Overview
 
